@@ -1,0 +1,35 @@
+{
+  "cli": {
+    "version": ">= 0.57.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "cagirtas@gmail.com",
+        "ascAppId": "1638867799",
+        "appleTeamId": "FDH6MWPL9X"
+      }
+    }
+  }
+}
